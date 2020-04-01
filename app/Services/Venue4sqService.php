@@ -12,7 +12,6 @@ use App\DTO\PlaceGroupDTO;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use App\DTO\CategoryDTO;
-use App\DTO\PlaceDTO;
 
 class Venue4sqService implements VenueService
 {
@@ -55,7 +54,7 @@ class Venue4sqService implements VenueService
      * @param $near
      * @param $query
      * @param $categoryId
-     * @return PlaceDTO[]
+     * @return PlaceGroupDTO[]
      * @throws \Exception
      */
     public function getPlaceGroups($near, $query = '', $categoryId = ''): array

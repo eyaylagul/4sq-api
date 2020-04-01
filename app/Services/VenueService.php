@@ -1,16 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: emreyaylagul
- * Date: 2020-04-01
- * Time: 16:20
- */
 
 namespace App\Services;
 
-
 use App\DTO\CategoryDTO;
-use App\DTO\PlaceDTO;
+use App\DTO\PlaceGroupDTO;
 
 interface VenueService
 {
@@ -20,7 +13,10 @@ interface VenueService
     public function getCategories();
 
     /**
-     * @return PlaceDTO[]
+     * @param $near
+     * @param $query
+     * @param $categoryId
+     * @return PlaceGroupDTO[]
      */
     public function getPlaceGroups($near, $query, $categoryId);
 }
