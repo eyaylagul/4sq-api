@@ -9,8 +9,8 @@ import ExploreRepositoryStatic from './static/exploreRepository';
 
 
 const repositories = {
-    categories: CategoriesRepositoryLocal,
-    explore: ExploreRepositoryLocal
+    categories: CategoriesRepositoryStatic,
+    explore: ExploreRepositoryStatic
 };
 
 export default {

@@ -43,19 +43,12 @@ export default new Vuex.Store({
             commit('SET_SELECTED_CATEGORIES', categories);
         },
         async getGroups({commit, getters}) {
-            /*const {data: {response: {groups}}} = await ExploreRepository.get(
-                getters.venue,
-                getters.categoryQuery,
-                getters.selectedCategories
-            );*/
-
             const {data: {response: {groups}}} = await ExploreRepository.get(
                 getters.venue,
                 getters.categoryQuery,
                 getters.selectedCategories
             );
 
-            console.log(groups);
             commit('SET_GROUPS', groups);
         }
     }

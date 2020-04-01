@@ -1,6 +1,6 @@
 <template>
     <div class="well">
-        <h1>Valetta Locations by
+        <h1>"Valetta" Locations by
             <input type="text" v-model="category" placeholder="Category Name">
             <button type="button" class="btn btn-primary" @click="getGroups">GET</button>
         </h1>
@@ -15,6 +15,7 @@
                 </ul>
             </li>
         </ul>
+
     </div>
 </template>
 

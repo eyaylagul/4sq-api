@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: emreyaylagul
- * Date: 2020-04-01
- * Time: 18:17
- */
 
 namespace App\DTO;
-
 
 class PlaceGroupDTO
 {
