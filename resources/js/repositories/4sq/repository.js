@@ -7,6 +7,6 @@ export default axios.create({
     params: {
         client_id: process.env.MIX_FOURSQUARE_CLIENT_ID,
         client_secret: process.env.MIX_FOURSQUARE_CLIENT_SECRET,
-        v: 20200401
+        v: (new Date).toISOString().slice(0,10).replace(/-/g,"")
     }
 });
