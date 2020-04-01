@@ -7,6 +7,6 @@ export default axios.create({
     params: {
         client_id: process.env.MIX_FOURSQUARE_CLIENT_ID,
         client_secret: process.env.MIX_FOURSQUARE_CLIENT_SECRET,
-        v: 20200331
+        v: 20200401
     }
 });
